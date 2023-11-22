@@ -1,0 +1,174 @@
+html,
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e2e2e3;
+}
+
+header {
+  background: #5f30e2;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .container {
+  width: 1024px;
+  border-radius: 8px;
+  margin: 16px;
+  background: #f8f9fa;
+  padding: 16px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.item > .inner h2 {
+  margin-bottom: unset;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: auto;
+  border-radius: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: Raleway, sans-serif;
+  background: #f5f1ff;
+  border: 2px solid #9475ea;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.btn-submit {
+  width: fit-content;
+  font-family: Raleway, sans-serif;
+  border-radius: 16px;
+  padding: 12px 24px;
+  border: 2px solid #5f30e2;
+  color: black;
+  font-size: 24px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #5f30e2;
+  color: white;
+}
+
+input[type="text"],
+input[type="number"],
+.btn-submit:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-title {
+  margin: auto 0;
+}
+
+.check-button,
+.undo-button {
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: #008000;
+  font-weight: 600;
+}
+
+.check-button:hover,
+.undo-button:hover {
+  color: #fff;
+  background-color: #063a06;
+}
+
+.trash-button {
+  height: 40px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: #ff0000;
+  font-weight: 600;
+  color: #fff;
+}
+
+.trash-button:hover {
+  background-color: #ffc0cb;
+  color: #000;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper .container {
+    width: 90%;
+  }
+
+  .list-item {
+    width: 100%;
+  }
+
+  .form {
+    width: 95%;
+  }
+}
